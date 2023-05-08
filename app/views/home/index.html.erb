@@ -1,0 +1,12 @@
+<h1><b>BIENVENUE !</h1>
+<h2> Voici la liste des potins : </h2>
+<div class="card-container">
+  <% @gossip.each do |gossip| %>
+    <div class="card">
+      <h2><%= gossip.title %></h2>
+      <p>Ecrit par <%= gossip.user.first_name %></p>
+      <p><%= link_to 'Voir détails', gossip_path(gossip) %></p>
+      <p>clique <%= link_to 'ici', user_path(gossip.user), class: 'highlight' %> si tu veux en savoir plus sur l'auteur ? </p>
+    </div>
+  <% end %>
+</div>

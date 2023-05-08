@@ -1,0 +1,6 @@
+    <h1>Potin n°<%=@gossip.id %></h1>
+    <p>Auteur : <%=@gossip.user.first_name%> <%=@gossip.user.last_name%><br>(tu veux en savoir plus sur l'auteur ? clique <%= link_to 'ici', user_path(@gossip.user) %>)</p>
+    <p>Title : <%= @gossip.title %></p>
+    <p>Content : <%= @gossip.content %></p>
+    <p>Date de création : <%= @gossip.created_at.strftime('%d/%m/%Y') %></p>
+    
