@@ -18,7 +18,7 @@ It's like Facebook but only with gossips! You will enjoy this !
 ## Installation
 
 
-* 'Git clone' #cloning this repo
+* `Git clone` #cloning this repo
 * `bundle install` #installing the Ruby's gems
 
 
